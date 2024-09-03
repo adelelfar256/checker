@@ -65,7 +65,7 @@ async function fetchAndAnalyze() {
     const optionsCount = targetElement.find('option').length;
 
     // Check if the count is different from 8
-    if (optionsCount !== 8) {
+    if (optionsCount !== 7) {
       await sendEmail(
         'Notification: <option> Count Changed',
         `The number of <option> elements is ${optionsCount}. This is different from the expected count of 8.`
